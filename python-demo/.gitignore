@@ -1,2 +1,4 @@
 myvenv/
 .vscode/
+*.pyc
+environment_setter.py

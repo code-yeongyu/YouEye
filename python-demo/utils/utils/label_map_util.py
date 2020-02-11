@@ -12,14 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
 """Label map utility functions."""
 
 import logging
 
 import tensorflow as tf
 from google.protobuf import text_format
-from protos import string_int_label_map_pb2
+from ..protos import string_int_label_map_pb2
 
 
 def _validate_label_map(label_map):
@@ -86,14 +85,17 @@ def convert_label_map_to_categories(label_map,
         label_id_offset = 1
         for class_id in range(max_num_classes):
             categories.append({
-                'id': class_id + label_id_offset,
-                'name': 'category_{}'.format(class_id + label_id_offset)
+                'id':
+                class_id + label_id_offset,
+                'name':
+                'category_{}'.format(class_id + label_id_offset)
             })
         return categories
     for item in label_map.item:
         if not 0 < item.id <= max_num_classes:
-            logging.info('Ignore item %d since it falls outside of requested '
-                         'label range.', item.id)
+            logging.info(
+                'Ignore item %d since it falls outside of requested '
+                'label range.', item.id)
             continue
         if use_display_name and item.HasField('display_name'):
             name = item.display_name
