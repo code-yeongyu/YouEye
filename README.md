@@ -2,9 +2,9 @@
 
 [한국어 README](https://github.com/code-yeongyu/YouEye/blob/master/README_ko.md)
 
-Using no-voice supported kiosk for blinded people is is extremly difficult.
+Using a no-voice supported kiosk is extremly difficult for blind people.
 
-Therefore, if you just reach your hand and capture it with your phone camera, YouEye will read you what will you touch.
+Therefore, if you just reach your hand up and capture it with your phone camera, YouEye will read you what will you touch.
 
 Currently, only python demos are available, with web-server wrapper.  
 Word coordinate detector for <https://github.com/code-yeongyu/east-detector-socket-wrapper> is used for this project.
@@ -42,7 +42,7 @@ Because of the lack of trainset, I recommend you to use naver-ocr-api.
 
 ## Run demonstration
 
-clone this project, move to directory python-demo and install required pip modules by executing:
+Clone this project, move to directory python-demo and install required pip modules by executing folliwing commands.
 
 ```bash
 pip install -r requirements.txt
