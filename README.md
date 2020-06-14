@@ -62,6 +62,6 @@ python web-wrapper.py
 
 ### About web interface
 
-Send psot request to /i_am_iron_man with form-data body, and attach your image to key image.  
+Send post request to /i_am_iron_man with form-data body, and attach your image to key image.  
 Then the server will respond with the desired text.  
 Currently, the web interface is setted to use naver-ocr-api, so you have to get permission or use tesseract to use ocr properly.
