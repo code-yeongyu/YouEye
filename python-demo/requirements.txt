@@ -32,7 +32,7 @@ opt-einsum==3.1.0
 parso==0.6.1
 Pillow==9.0.0
 pluggy==0.13.1
-protobuf==3.11.3
+protobuf==3.18.3
 pyglet==1.4.10
 pylint==2.4.4
 pytesseract==0.3.2
